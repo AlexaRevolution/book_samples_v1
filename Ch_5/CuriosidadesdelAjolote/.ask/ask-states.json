@@ -4,8 +4,24 @@
     "default": {
       "skillInfrastructure": {
         "@ask-cli/lambda-deployer": {
-          "deployState": {}
+          "deployState": {
+            "default": {
+              "iamRole": "arn:aws:iam::171489363667:role/ask-lambda-CuriosidadesdelAjolote-1600791370978",
+              "lambda": {
+                "arn": "arn:aws:lambda:us-east-1:171489363667:function:ask-curiosidadesdelajolote-default-default-1600791378593",
+                "lastModified": "2020-09-22T16:16:19.083+0000",
+                "revisionId": "989b956f-51d1-4b26-9109-06e736f2fc2b"
+              }
+            }
+          }
         }
+      },
+      "skillId": "amzn1.ask.skill.f0fe07ef-ff75-475c-941d-adc06af23398",
+      "skillMetadata": {
+        "lastDeployHash": "UOcAYebqfU7U1itHptGxOaQ9gZ4="
+      },
+      "code": {
+        "default": {}
       }
     }
   }
