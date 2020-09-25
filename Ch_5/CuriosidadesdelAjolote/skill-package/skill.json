@@ -20,7 +20,7 @@
             "Alexa launch curiosities of the axolotl"
           ],
           "name": "Curiosidades_del_Ajolote",
-          "description": "Sample Full Description"
+          "summary": "Sample Full Description"
         },
         "es-MX": {
           "description": "Sample Full Description",
@@ -29,10 +29,10 @@
             "Alexa lanza curiosidades del ajolote"
           ],
           "name": "Curiosidades_del_Ajolote",
-          "summary": "Sample Short Description"
+          "summary": "Pequeña descripción"
         }
       },
-      "testingInstructions": "Sample Testing Instructions.",
+      "testingInstructions": "Sample Testing Instructions."
     }
   }
 }
