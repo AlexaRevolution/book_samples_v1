@@ -1,26 +1,28 @@
-const Alexa = require('ask-sdk-core');
+'use strict';
 
-const FactHandler = {
+const Alexa = require('ask-sdk-core');
+const i18n = require('i18next');
+
+module.exports = {
+ FactHandler: {
   canHandle(handlerInput) {
-	const request = handlerInput.requestEnvelope.request;
-	return request.type === 'IntentRequest'
-    	&& request.intent.name === 'FactIntent';
+	 return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+    	&& Alexa.getIntentName(handlerInput.requestEnvelope) === 'FactIntent';
   },
   handle(handlerInput) {
 	const factArr = data;
 	const factIndex = Math.floor(Math.random() * factArr.length);
 	const randomFact = factArr[factIndex];
-	const speechOutput = GET_FACT_MESSAGE + randomFact;
+	const speechOutput = i18n.t('GET_FACT_MESSAGE') + randomFact;
 
 	return handlerInput.responseBuilder
   	.speak(speechOutput)
   	.withShouldEndSession(true)
  	 .getResponse();
+   },
   },
 };
 
-const SKILL_NAME = 'Curiosidades del Ajolote';
-const GET_FACT_MESSAGE = 'Un dato curioso es que ';
 const data = [
   //Agrega tu contenido de datos curiosos aqui...
   'su apariencia es como la de un renacuajo.',
