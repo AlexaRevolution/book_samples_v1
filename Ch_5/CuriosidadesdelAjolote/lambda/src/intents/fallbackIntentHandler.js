@@ -1,6 +1,6 @@
 'use strict';
 
-const Alexa = require('ask-sdk-core
+const Alexa = require('ask-sdk-core');
 const i18n = require('i18next');
 
 module.exports = {
