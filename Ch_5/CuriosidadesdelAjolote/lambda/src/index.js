@@ -13,6 +13,7 @@ let { FallbackIntentHandler } = require('./intents/fallbackIntentHandler');
 let { SessionEndedRequestHandler } = require('./intents/sessionEndedRequestHandler');
 let { IntentReflectorHandler } = require('./intents/intentReflectorHandler');
 let { ErrorHandler } = require('./errors/errorHandler');
+let { LocalisationRequestInterceptor } = require('./interceptors/localisationRequestInterceptor');
 
 // The SkillBuilder acts as the entry point for your skill, routing all request and response
 // payloads to the handlers above. Make sure any new handlers or interceptors you've
@@ -27,4 +28,6 @@ exports.handler = Alexa.SkillBuilders.custom()
         IntentReflectorHandler)
     .addErrorHandlers(
         ErrorHandler)
+    .addRequestInterceptors(
+        LocalisationRequestInterceptor)
     .lambda();
