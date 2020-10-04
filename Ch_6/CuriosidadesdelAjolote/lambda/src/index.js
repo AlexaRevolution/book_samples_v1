@@ -7,6 +7,8 @@ const Alexa = require('ask-sdk-core');
 
 let { LaunchRequestHandler } = require('./intents/launchRequestHandler');
 let { FactHandler } = require('./intents/factHandler');
+let { ContactHandler } = require('./intents/contactHandler');
+let { CaracteristicasAjoloteHandler } = require('./intents/caracteristicasAjoloteHandler');
 let { HelpIntentHandler } = require('./intents/helpIntentHandler');
 let { CancelAndStopIntentHandler } = require('./intents/cancelAndStopIntentHandler');
 let { FallbackIntentHandler } = require('./intents/fallbackIntentHandler');
@@ -22,8 +24,11 @@ exports.handler = Alexa.SkillBuilders.custom()
     .addRequestHandlers(
         LaunchRequestHandler,
         FactHandler,
+        ContactHandler,
+        CaracteristicasAjoloteHandler,
         HelpIntentHandler,
         CancelAndStopIntentHandler,
+        FallbackIntentHandler,
         SessionEndedRequestHandler,
         IntentReflectorHandler)
     .addErrorHandlers(
