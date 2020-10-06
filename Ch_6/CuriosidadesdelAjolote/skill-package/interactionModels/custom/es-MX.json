@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "curiosidades del ajolote",
+            "invocationName": "curiosidades del ajolote test",
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
@@ -220,7 +220,7 @@
                 "variations": [
                     {
                         "type": "PlainText",
-                        "value": "¿Quieres escuchar otro dato curioso de este animalito?"
+                        "value": "¿Seguro que quieres un dato curioso de este animalito?"
                     }
                 ]
             },
@@ -238,7 +238,7 @@
                 "variations": [
                     {
                         "type": "PlainText",
-                        "value": "¿Quieres saber sobrel el ajolote de tipo {typesofaxolotl} ?"
+                        "value": "¿Quieres saber sobre el ajolote de tipo {typesofaxolotl} ?"
                     }
                 ]
             },
