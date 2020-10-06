@@ -10,12 +10,12 @@ module.exports = {
     	&& Alexa.getIntentName(handlerInput.requestEnvelope) === 'ContactIntent';
   },
   handle(handlerInput) {
-	const speechOutput = i18n.t('GET_FACT_MESSAGE') + randomFact;
-
-	return handlerInput.responseBuilder
-  	.speak(speechOutput)
-  	.withShouldEndSession(true)
- 	 .getResponse();
-   },
+    return handlerInput.responseBuilder
+        .addDelegateDirective({
+            name: 'ContactIntent',
+            slots: {}
+        })
+        .getResponse();
+	}
   },
 };

@@ -19,7 +19,9 @@ module.exports = {
       FALLBACK_MSG: 'Lo siento, no se nada sobre eso. Por favor inténtalo otra vez.',
       ERROR_MSG: 'Lo siento, ha habido un error. Por favor inténtalo otra vez.',
 
-      GET_FACT_MESSAGE: 'Un dato curioso es que '
+      GET_FACT_MESSAGE: 'Un dato curioso es que ',
+      GET_TYPE_AXOLOTL: 'Has seleccionado el tipo de ajolote ',
+      OK_COMPLETED_AXOLOTL: 'Perfecto, estoy almacenando la caracteristica...',
     },
   },
 };
