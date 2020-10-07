@@ -12,7 +12,8 @@
                 {
                     "name": "AMAZON.HelpIntent",
                     "samples": [
-                      "help"
+                      "help",
+                      "help me"
                     ]
                 },
                 {

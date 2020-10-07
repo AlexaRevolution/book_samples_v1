@@ -12,7 +12,8 @@
                 {
                     "name": "AMAZON.HelpIntent",
                     "samples": [
-                      "help"
+                      "help",
+                      "help me"
                     ]
                 },
                 {
@@ -67,11 +68,18 @@
                     "slots": [
                         {
                             "name": "caracteristicas",
-                            "type": "caracterajolotes"
+                            "type": "caracterajolotes",
+                            "samples": [
+                                "the axolotl of {caracteristicas}",
+                                "{caracteristicas}"
+                            ]
                         }
                     ],
                     "samples": [
-                        "tell me one {caracteristicas}"
+                        "show me an axolotl {caracteristicas} ",
+                        "I would like to see an axolotl with {caracteristicas} ",
+                        "I want an axolotl {caracteristicas}",
+                        "tell me a kind of axolotl {caracteristicas}"
                     ]
                 }
             ],
@@ -84,16 +92,13 @@
                                 "value": "velasci",
                                 "synonyms": [
                                     "ambystoma",
-                                    "altiplano"
+                                    "plateau"
                                 ]
                             }
                         },
                         {
                             "name": {
-                                "value": "gold",
-                                "synonyms": [
-                                    "dorado"
-                                ]
+                                "value": "gold"
                             }
                         },
                         {
@@ -103,18 +108,18 @@
                         },
                         {
                             "name": {
-                                "value": "blancos",
+                                "value": "white",
                                 "synonyms": [
-                                    "leucisticos"
+                                    "leucistic"
                                 ]
                             }
                         },
                         {
                             "name": {
-                                "value": "negro",
+                                "value": "black",
                                 "synonyms": [
-                                    "silvestre",
-                                    "pardo"
+                                    "wild",
+                                    "brown"
                                 ]
                             }
                         }
@@ -125,7 +130,7 @@
                     "values": [
                         {
                             "name": {
-                                "value": "verde"
+                                "value": "green"
                             }
                         },
                         {
@@ -184,6 +189,7 @@
                 },
                 {
                     "name": "TypeAjolote",
+                    "delegationStrategy": "SKILL_RESPONSE",
                     "confirmationRequired": true,
                     "prompts": {
                         "confirmation": "Confirm.Intent.879203276417"
@@ -206,8 +212,27 @@
                             ]
                         }
                     ]
-                }
-            ],
+                },
+                {
+                "name": "CaracteristicasAjoloteIntent",
+                "confirmationRequired": true,
+                "prompts": {
+                    "confirmation": "Confirm.Intent.556800550317"
+                },
+                "slots": [
+                    {
+                        "name": "caracteristicas",
+                        "type": "caracterajolotes",
+                        "confirmationRequired": true,
+                        "elicitationRequired": true,
+                        "prompts": {
+                            "confirmation": "Confirm.Slot.556800550317.667679821005",
+                            "elicitation": "Elicit.Slot.556800550317.667679821005"
+                        }
+                    }
+                ]
+            }
+        ],
             "delegationStrategy": "ALWAYS"
         },
         "prompts": [
@@ -216,7 +241,7 @@
                 "variations": [
                     {
                         "type": "PlainText",
-                        "value": "Do you want to hear another curious fact about this little animal?"
+                        "value": "Are you sure you want a curious fact about this little animal?"
                     }
                 ]
             },
@@ -262,6 +287,32 @@
                     {
                         "type": "PlainText",
                         "value": "You have entered an invalid value"
+                    }
+                ]
+            }, {
+                "id": "Confirm.Intent.556800550317",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Do you want to know about axolotl with {caracteristicas} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.556800550317.667679821005",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Are you sure?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.556800550317.667679821005",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What characteristic of the axolotl do you want to know?"
                     }
                 ]
             }
