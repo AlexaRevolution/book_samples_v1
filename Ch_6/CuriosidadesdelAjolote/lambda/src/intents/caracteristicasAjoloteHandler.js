@@ -10,6 +10,7 @@ module.exports = {
 			  && Alexa.getIntentName(handlerInput.requestEnvelope) === 'CaracteristicasAjoloteIntent';
 		},
 		handle(handlerInput) {
+
 			const speechOutput = i18n.t('OK_COMPLETED_AXOLOTL');
 
 			return handlerInput.responseBuilder

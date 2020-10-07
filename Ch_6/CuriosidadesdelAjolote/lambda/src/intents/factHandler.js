@@ -4,23 +4,23 @@ const Alexa = require('ask-sdk-core');
 const i18n = require('i18next');
 
 module.exports = {
- FactHandler: {
-  canHandle(handlerInput) {
-	 return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
-    	&& Alexa.getIntentName(handlerInput.requestEnvelope) === 'FactIntent';
-  },
-  handle(handlerInput) {
-	const factArr = data;
-	const factIndex = Math.floor(Math.random() * factArr.length);
-	const randomFact = factArr[factIndex];
-	const speechOutput = i18n.t('GET_FACT_MESSAGE') + randomFact;
+  FactHandler: {
+      canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'FactIntent';
+      },
+      handle(handlerInput) {
+        const factArr = data;
+        const factIndex = Math.floor(Math.random() * factArr.length);
+        const randomFact = factArr[factIndex];
+        const speechOutput = i18n.t('GET_FACT_MESSAGE') + randomFact;
 
-	return handlerInput.responseBuilder
-  	.speak(speechOutput)
-  	.withShouldEndSession(false)
- 	 .getResponse();
-   },
-  },
+        return handlerInput.responseBuilder
+          .speak(speechOutput)
+          .withShouldEndSession(false)
+          .getResponse();
+      },
+    },
 };
 
 const data = [

@@ -21,7 +21,26 @@ module.exports = {
 
       GET_FACT_MESSAGE: 'Un dato curioso es que ',
       GET_TYPE_AXOLOTL: 'Has seleccionado el tipo de ajolote ',
-      OK_COMPLETED_AXOLOTL: 'Perfecto, estoy almacenando la caracteristica...',
+      OK_COMPLETED_AXOLOTL: 'Ese ajolote es el mejor del mundo!',
+      CONTACT_MESSAGE: 'Puedes obtener mas informacion en ajolote arroba alexa.com'
     },
+  },
+  en: {
+    translation: {
+      SKILL_NAME: 'Curiosidades del Ajolote',
+      WELCOME_MSG: '¡Hola! bienvenido a Curiosidades del Ajolote, para comenzar puedes decir: dime un dato curioso del ajolote... o si deseas detenerme solo di: ¡Cancela!... entonces, ¿cómo te puedo ayudar?',
+      HELLO_MSG: 'Hola Mundo!',
+      HELP_MSG: 'Puedes decir: dame un dato curioso del ajolote... o simplemente para detenerme puedes decir: ¡Cancela!... ¿Cómo te puedo ayudar?',
+      GOODBYE_MSG: 'Hasta luego, y recuerda el ajolote se encuentra en peligro de extinción.',
+      REFLECTOR_MSG: 'Acabas de activar {{intentName}}',
+      FALLBACK_MSG: 'Lo siento, no se nada sobre eso. Por favor inténtalo otra vez.',
+      ERROR_MSG: 'Lo siento, ha habido un error. Por favor inténtalo otra vez.',
+
+      GET_FACT_MESSAGE: 'Un dato curioso es que ',
+      GET_TYPE_AXOLOTL: 'Has seleccionado el tipo de ajolote ',
+      OK_COMPLETED_AXOLOTL: 'Ese ajolote es el mejor del mundo!',
+      CONTACT_MESSAGE: 'Puedes obtener mas informacion en ajolote arroba alexa.com'
+    },
+    
   },
 };

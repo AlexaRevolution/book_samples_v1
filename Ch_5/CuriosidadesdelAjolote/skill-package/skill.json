@@ -28,6 +28,15 @@
           ],
           "name": "Curiosidades_del_Ajolote",
           "summary": "Pequeña descripción"
+        },
+        "es-ES": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa abre curiosidades del ajolote",
+            "Alexa lanza curiosidades del ajolote"
+          ],
+          "name": "Curiosidades_del_Ajolote",
+          "summary": "Pequeña descripción"
         }
       },
       "testingInstructions": "Sample Testing Instructions."

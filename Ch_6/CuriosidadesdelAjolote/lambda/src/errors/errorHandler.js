@@ -11,7 +11,7 @@ module.exports = {
   },
   handle(handlerInput, error) {
     const speakOutput = i18n.t('ERROR_MSG');
-    console.log(`~~~~ Error handled: ${JSON.stringify(error)}`);
+    console.log('~~~~ Error handled:' +  JSON.stringify(error));
 
     return handlerInput.responseBuilder
       .speak(speakOutput)

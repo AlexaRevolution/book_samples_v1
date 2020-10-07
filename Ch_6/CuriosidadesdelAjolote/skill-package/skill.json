@@ -2,7 +2,7 @@
   "manifest": {
     "apis": {
       "custom": {
-        
+
       }
     },
     "manifestVersion": "1.0",
@@ -21,6 +21,15 @@
           "summary": "Sample Full Description"
         },
         "es-MX": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa abre curiosidades del ajolote",
+            "Alexa lanza curiosidades del ajolote"
+          ],
+          "name": "Curiosidades_del_Ajolote",
+          "summary": "Pequeña descripción"
+        },
+        "es-ES": {
           "description": "Sample Full Description",
           "examplePhrases": [
             "Alexa abre curiosidades del ajolote",

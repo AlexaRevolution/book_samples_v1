@@ -10,11 +10,10 @@ module.exports = {
     	&& Alexa.getIntentName(handlerInput.requestEnvelope) === 'ContactIntent';
   },
   handle(handlerInput) {
+    const speakOutput = i18n.t('CONTACT_MESSAGE');
+
     return handlerInput.responseBuilder
-        .addDelegateDirective({
-            name: 'ContactIntent',
-            slots: {}
-        })
+        .speak(speakOutput)
         .getResponse();
 	}
   },
