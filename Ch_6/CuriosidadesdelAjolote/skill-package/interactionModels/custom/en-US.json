@@ -6,20 +6,20 @@
                 {
                     "name": "AMAZON.CancelIntent",
                     "samples": [
-                      "cancel"
+                        "cancel"
                     ]
                 },
                 {
                     "name": "AMAZON.HelpIntent",
                     "samples": [
-                      "help",
-                      "help me"
+                        "help",
+                        "help me"
                     ]
                 },
                 {
                     "name": "AMAZON.StopIntent",
                     "samples": [
-                      "stop"
+                        "stop"
                     ]
                 },
                 {
@@ -30,18 +30,18 @@
                     "name": "FactIntent",
                     "slots": [],
                     "samples": [
-                      "give me a curious fact about the axolotl",
-                      "tell me about the axolotl",
-                      "tell me a curious fact about the axolotl"
+                        "give me a curious fact about the axolotl",
+                        "tell me about the axolotl",
+                        "tell me a curious fact about the axolotl"
                     ]
                 },
                 {
                     "name": "ContactIntent",
                     "slots": [],
                     "samples": [
-                      "Give me the contact details",
-                       "Tell me where can I contact you",
-                       "Tell me the phone number"
+                        "Give me the contact details",
+                        "Tell me where can I contact you",
+                        "Tell me the phone number"
                     ]
                 },
                 {
@@ -72,7 +72,10 @@
                             "samples": [
                                 "the axolotl of {caracteristicas}",
                                 "{caracteristicas}"
-                            ]
+                            ],
+                            "multipleValues": {
+                                "enabled": true
+                            }
                         }
                     ],
                     "samples": [
@@ -214,25 +217,25 @@
                     ]
                 },
                 {
-                "name": "CaracteristicasAjoloteIntent",
-                "confirmationRequired": true,
-                "prompts": {
-                    "confirmation": "Confirm.Intent.556800550317"
-                },
-                "slots": [
-                    {
-                        "name": "caracteristicas",
-                        "type": "caracterajolotes",
-                        "confirmationRequired": true,
-                        "elicitationRequired": true,
-                        "prompts": {
-                            "confirmation": "Confirm.Slot.556800550317.667679821005",
-                            "elicitation": "Elicit.Slot.556800550317.667679821005"
+                    "name": "CaracteristicasAjoloteIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.556800550317"
+                    },
+                    "slots": [
+                        {
+                            "name": "caracteristicas",
+                            "type": "caracterajolotes",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.556800550317.667679821005",
+                                "elicitation": "Elicit.Slot.556800550317.667679821005"
+                            }
                         }
-                    }
-                ]
-            }
-        ],
+                    ]
+                }
+            ],
             "delegationStrategy": "ALWAYS"
         },
         "prompts": [
@@ -289,7 +292,8 @@
                         "value": "You have entered an invalid value"
                     }
                 ]
-            }, {
+            },
+            {
                 "id": "Confirm.Intent.556800550317",
                 "variations": [
                     {
