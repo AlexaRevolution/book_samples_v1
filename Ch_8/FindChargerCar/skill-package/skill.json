@@ -1,0 +1,47 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:171489363667:function:ask-curiosidadesdelajolote-default-default-1602269672959"
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "en-US": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa open charger car",
+            "Alexa launch charger car"
+          ],
+          "name": "Charger Car",
+          "summary": "Sample Full Description"
+        },
+        "es-MX": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa abre cargadores de carro",
+            "Alexa lanza cargadores de carro"
+          ],
+          "name": "Cargadores de Carro",
+          "summary": "Pequeña descripción"
+        },
+        "es-ES": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa abre cargadores de carro",
+            "Alexa lanza cargadores de carro"
+          ],
+          "name": "Cargadores de Carro",
+          "summary": "Pequeña descripción"
+        }
+      },
+      "testingInstructions": "Sample Testing Instructions."
+    }
+  }
+}
