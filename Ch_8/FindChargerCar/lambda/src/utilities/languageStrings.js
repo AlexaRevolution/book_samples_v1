@@ -11,7 +11,7 @@ module.exports = {
   es: {
     translation: {
       SKILL_NAME: 'Cargadores de Carro',
-      WELCOME_MSG: '¡Bienvenido a API Electric Charger! Para comenzar puedes decir "cargadores" para obtener información.',
+      WELCOME_MSG: '¡Bienvenido a API Electric Charger! Para comenzar puedes decir: "dame opciones de cargadores", esto para obtener información, o simplemente para detenerme puedes decir: ¡cancela!... ¿cómo te puedo ayudar?',
       HELLO_MSG: '¡Hola Mundo!',
       HELP_MSG: 'Puedes decir: dame opciones de cargadores... o simplemente para detenerme puedes decir: ¡cancela!... ¿cómo te puedo ayudar?',
       GOODBYE_MSG: '¡Hasta luego!',

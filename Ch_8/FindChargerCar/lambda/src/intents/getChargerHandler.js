@@ -2,6 +2,7 @@
 
 const Alexa = require('ask-sdk-core');
 const i18n = require('i18next');
+const axios = require('axios');
 const chargersUrl = 'https://api-electric-charger.herokuapp.com/electricCharger';
 
 module.exports = {
