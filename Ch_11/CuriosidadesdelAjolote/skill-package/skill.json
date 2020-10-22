@@ -1,0 +1,47 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:141568529918:function:ask-curiosidadesdelajolote-default-default-1602053816555"
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "en-US": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa open curiosities of the axolotl",
+            "Alexa launch curiosities of the axolotl"
+          ],
+          "name": "Curiosidades_del_Ajolote",
+          "summary": "Sample Full Description"
+        },
+        "es-MX": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa abre curiosidades del ajolote",
+            "Alexa lanza curiosidades del ajolote"
+          ],
+          "name": "Curiosidades_del_Ajolote",
+          "summary": "Pequeña descripción"
+        },
+        "es-ES": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa abre curiosidades del ajolote",
+            "Alexa lanza curiosidades del ajolote"
+          ],
+          "name": "Curiosidades_del_Ajolote",
+          "summary": "Pequeña descripción"
+        }
+      },
+      "testingInstructions": "Sample Testing Instructions."
+    }
+  }
+}
