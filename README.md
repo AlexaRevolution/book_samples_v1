@@ -1,15 +1,15 @@
-# La revolución de Alexa🇺
-<img src="https://github.com/AlexaRevolution/book_samples_v1/blob/master/book_samples_v1/Portada/JustDevice.png" />
+# La revolución de Alexa
+<img src="https://github.com/AlexaRevolution/book_samples_v1/blob/master/Portada/JustDevice.png"/>
 
 ## Overview
 
-En este repositorio encontraras odo el código que coincide con el las explicaciones vistas a lo largo del libro que acabas de adquirir.
+En este repositorio encontrarás todo el código que coincide con las explicaciones vistas a lo largo del libro que acabas de adquirir.
 
 A través de cada capítulo aprenderás a usar el Alexa Skills Kit de manera gradual.
 
 Para **Comenzar** da click en el siguiente botón:
 
-[![Get Started](https://camo.githubusercontent.com/db9b9ce26327ad3bac57ec4daf0961a382d75790/68747470733a2f2f6d2e6d656469612d616d617a6f6e2e636f6d2f696d616765732f472f30312f6d6f62696c652d617070732f6465782f616c6578612f616c6578612d736b696c6c732d6b69742f7475746f7269616c732f67656e6572616c2f627574746f6e732f627574746f6e5f6765745f737461727465642e5f5454485f2e706e67)](./instructions/1-voice-user-interface.md)
+[![Comenzar](https://github.com/AlexaRevolution/book_samples_v1/tree/master/Ch_4/testskill)](https://github.com/AlexaRevolution/book_samples_v1/tree/master/Ch_4/testskill)
 
 O da click [aquī](./instructions/7-cli.md) para conocer las instrucciones usando el ASK CLI (command line interface).
 
