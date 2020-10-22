@@ -1,4 +1,4 @@
-# La revolución de Alexa U+1F1F8
+# La revolución de Alexa 🇲🇽 - 🇪🇸
 <img src="https://github.com/AlexaRevolution/book_samples_v1/blob/master/Portada/JustDevice.png"/>
 
 ## Visión General
