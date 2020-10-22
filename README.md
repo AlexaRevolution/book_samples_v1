@@ -1,5 +1,5 @@
 # La revolución de Alexa 🇲🇽 - 🇪🇸
-<img src="../Portada/JustDevice.png"/>
+<img src="https://github.com/AlexaRevolution/book_samples_v1/blob/master/Portada/JustDevice.png"/>
 
 ## Visión General
 
@@ -7,7 +7,7 @@ En este repositorio encontrarás todo el código que coincide con las explicacio
 
 Para **Comenzar** da click en el siguiente botón:
 
-[![Comenzar](../Portada/start.gif)](../Ch_4/testskill)
+[![Comenzar](https://github.com/AlexaRevolution/book_samples_v1/blob/master/Portada/start.gif)](https://github.com/AlexaRevolution/book_samples_v1/tree/master/Ch_4/testskill)
 
 O da click [aquí](https://www.npmjs.com/package/ask-cli) para conocer las instrucciones usando el ASK CLI (command line interface).
 
