@@ -6,16 +6,17 @@ module.exports = {
     async process(handlerInput, response) {
       if (!response) return; // avoid intercepting calls that have no outgoing response due to errors
 
-      const { attributesManager } = handlerInput;
+      const { attributesManager, requestEnvelope } = handlerInput;
 
-      const sessionAttributes = attributesManager.getSessionAttributes();
+      const shouldEndSession = typeof response.shouldEndSession === 'undefined' ? true : response.shouldEndSession; //is this a session end?        
+      if (shouldEndSession || Alexa.getRequestType(requestEnvelope) === 'SessionEndedRequest') {
+        console.log(
+          "Saving to persistent storage:" + JSON.stringify(requestEnvelope)
+        );
+        attributesManager.setPersistentAttributes(requestEnvelope);
+        await attributesManager.savePersistentAttributes();
+      }
 
-      console.log(
-        "Saving to persistent storage:" + JSON.stringify(sessionAttributes)
-      );
-
-      attributesManager.setPersistentAttributes(sessionAttributes);
-      await attributesManager.savePersistentAttributes();
     },
   },
 };
