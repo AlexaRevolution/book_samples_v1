@@ -13,6 +13,16 @@ module.exports = {
 		handle(handlerInput) {
 
 			const currentIntent = handlerInput.requestEnvelope.request.intent; 
+
+			let axolotl  = currentIntent.slots.typesofaxolotl;
+			const locale = Alexa.getLocale(handlerInput.requestEnvelope);
+		
+		    // the value typesofaxolotl is empty if the user has not filled the slot
+		    // getUserDefaultAxoltl() returns the axolotl by default.
+			if (!axolotl.value) {
+			  currentIntent.slots.typesofaxolotl.value = getUserDefaultAxoltl(locale);
+			}
+		
 			// Return the Dialog.Delegate directive
 			return handlerInput.responseBuilder
 				.addDelegateDirective(currentIntent)
@@ -35,3 +45,15 @@ module.exports = {
 		},
 	},
 };
+
+function getUserDefaultAxoltl(local){
+	switch (local) {
+		case 'es-ES':
+		case 'es-MX':
+			return 'altiplano';
+		case 'en-US':
+			return 'altiplano';
+		default:
+			return 'plateau';
+	}
+}
