@@ -68,6 +68,17 @@ module.exports = {
 
       const speakOutput = i18n.t('WELCOME_MSG', {name: persitentAttributes.name});
 
+      if (!supportsAPL(handlerInput))
+      {
+        handlerInput.responseBuilder
+            .addDirective({
+            type: 'Alexa.Presentation.APL.RenderDocument',
+            version: '1.4',
+            document: require('.../response/display/Ajolote_Intro_APL/datasources/default.json'),
+            datasources: {}
+          }
+       )}
+
       return handlerInput.responseBuilder
         .speak(speakOutput)
         .reprompt(speakOutput)
@@ -75,3 +86,9 @@ module.exports = {
     },
   },
 };
+
+function supportsAPL(handlerInput) {
+  const supportedInterfaces = handlerInput.requestEnvelope.context.System.device.supportedInterfaces;
+  const aplInterface = supportedInterfaces['Alexa.Presentation.APL'];
+  return aplInterface !== null && aplInterface !== undefined;
+}
