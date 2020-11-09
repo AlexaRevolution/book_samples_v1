@@ -1,0 +1,114 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "interfaces": [
+          {
+            "supportedViewports": [
+              {
+                "maxHeight": 480,
+                "maxWidth": 480,
+                "minHeight": 480,
+                "minWidth": 480,
+                "mode": "HUB",
+                "shape": "ROUND"
+              },
+              {
+                "maxHeight": 600,
+                "maxWidth": 1024,
+                "minHeight": 600,
+                "minWidth": 1024,
+                "mode": "HUB",
+                "shape": "RECTANGLE"
+              },
+              {
+                "maxHeight": 800,
+                "maxWidth": 1280,
+                "minHeight": 800,
+                "minWidth": 1280,
+                "mode": "HUB",
+                "shape": "RECTANGLE"
+              },
+              {
+                "maxHeight": 540,
+                "maxWidth": 960,
+                "minHeight": 540,
+                "minWidth": 960,
+                "mode": "TV",
+                "shape": "RECTANGLE"
+              },
+              {
+                "maxHeight": 480,
+                "maxWidth": 960,
+                "minHeight": 480,
+                "minWidth": 960,
+                "mode": "HUB",
+                "shape": "RECTANGLE"
+              }
+            ],
+            "type": "ALEXA_PRESENTATION_APL"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::devices:all:address:full:read"
+      },
+      {
+        "name": "alexa::profile:name:read"
+      },
+      {
+        "name": "alexa::devices:all:notifications:write"
+      }
+    ],
+    "events": {
+      "publications": [
+        {
+          "eventName": "AMAZON.MessageAlert.Activated"
+        }
+      ],
+      "subscriptions": [
+        {
+          "eventName": "SKILL_PROACTIVE_SUBSCRIPTION_CHANGED"
+        }
+      ]
+    },
+    "publishingInformation": {
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "en-US": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa open curiosities of the axolotl",
+            "Alexa launch curiosities of the axolotl"
+          ],
+          "name": "Curiosidades_del_Ajolote",
+          "summary": "Sample Full Description"
+        },
+        "es-MX": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa abre curiosidades del ajolote",
+            "Alexa lanza curiosidades del ajolote"
+          ],
+          "name": "Curiosidades_del_Ajolote",
+          "summary": "Pequeña descripción"
+        },
+        "es-ES": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa abre curiosidades del ajolote",
+            "Alexa lanza curiosidades del ajolote"
+          ],
+          "name": "Curiosidades_del_Ajolote",
+          "summary": "Pequeña descripción"
+        }
+      },
+      "testingInstructions": "Sample Testing Instructions."
+    }
+  }
+}
