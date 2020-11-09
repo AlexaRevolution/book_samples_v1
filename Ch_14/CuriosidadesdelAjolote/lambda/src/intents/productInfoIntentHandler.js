@@ -30,7 +30,7 @@ module.exports = {
                                 InSkillProduct: {
                                     productId: product.productId
                                 },
-                                upsellMessage: 'Genial! Quieres saber mas sobre el producto?'
+                                upsellMessage: i18n.t('UPSELL_MSG')
                             },
                             token: product.productId
                         })
@@ -38,8 +38,8 @@ module.exports = {
             } else {
     
                 return handlerInput.responseBuilder
-                    .speak('No hemos encontrado ningun producto disponible')
-                    .reprompt('Tienes alguna duda sobre algun producto?')
+                    .speak(i18n.t('NOT_AVAILABLE_PRODUCTS_MSG'))
+                    .reprompt(i18n.t('AVAILABLE_PRODUCTS_REPROMPT_MSG'))
                     .getResponse();
             }
         }

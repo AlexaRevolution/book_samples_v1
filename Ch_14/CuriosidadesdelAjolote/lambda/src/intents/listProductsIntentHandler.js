@@ -24,16 +24,16 @@ module.exports = {
                 const productsMap = availableProducts.map(product => product.name);
                 let productsString = productsMap.join(', '); 
     
-                let speechOutput = 'Los productos disponibles para la compra son: ' + productsString;
+                let speechOutput = i18n.t('AVAILABLE_PRODUCTS_MSG') + ' '+ productsString;
                 return handlerInput.responseBuilder
                     .speak(speechOutput)
-                    .reprompt('Tienes alguna duda sobre los productos?')
+                    .reprompt(i18n.t('AVAILABLE_PRODUCTS_REPROMPT_MSG'))
                     .getResponse();
             }
     
             return handlerInput.responseBuilder
-                .speak('Lo siunto pero no encuentro ningun producto disponible')
-                .reprompt('Tienes alguna duda sobre los productos?')
+                .speak(i18n.t('NOT_AVAILABLE_PRODUCTS_MSG'))
+                .reprompt(i18n.t('AVAILABLE_PRODUCTS_REPROMPT_MSG'))
                 .getResponse();
         }
     },    

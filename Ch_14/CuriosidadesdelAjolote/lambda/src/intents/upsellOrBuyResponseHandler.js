@@ -18,16 +18,16 @@ module.exports = {
     
                 switch (request.payload.purchaseResult) {
                     case 'ACCEPTED':
-                        speechOutput = 'Compra realizada con éxito!';
+                        speechOutput = i18n.t('BUY_SUCCESS_MSG');
                         break;
                     case 'ALREADY_PURCHASED':
-                        speechOutput = 'Ya tienes la subscripción!';
+                        speechOutput = i18n.t('BUY_PURCHASED_MSG');
                         break;
                     case 'DECLINED':
-                        speechOutput = 'Se ha denegado la compra a la subcripción!';
+                        speechOutput = i18n.t('BUY_DENIED_MSG');
                         break;
                     default:
-                        speechOutput = 'Ha habido un problema durante el proceso de compra, vuelva a intentarlo';
+                        speechOutput = i18n.t('BUY_ERROR_MSG');
                         break;
                 }
     

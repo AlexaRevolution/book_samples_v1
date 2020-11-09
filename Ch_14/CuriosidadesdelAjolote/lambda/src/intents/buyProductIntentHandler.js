@@ -36,8 +36,8 @@ module.exports = {
             } else {
     
                 return handlerInput.responseBuilder
-                    .speak('No se encuentra ningún producto disponible')
-                    .reprompt('Tienes alguna duda sobre algun producto?')
+                    .speak(i18n.t('NOT_AVAILABLE_PRODUCTS_MSG'))
+                    .reprompt(i18n.t('AVAILABLE_PRODUCTS_REPROMPT_MSG'))
                     .getResponse();
             }
         }

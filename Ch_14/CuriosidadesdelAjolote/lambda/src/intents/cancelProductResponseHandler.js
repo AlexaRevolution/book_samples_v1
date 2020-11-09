@@ -17,13 +17,13 @@ module.exports = {
                 let speechOutput;
                 if (payload.purchaseResult === 'ACCEPTED') {
     
-                    speechOutput = 'Se ha procesado la devolución correctamente';
+                    speechOutput = i18n.t('REFUND_SUCCESS_MSG');
                 } else if (payload.purchaseResult === 'DECLINED') {
     
-                    speechOutput = 'Se ha denegado la devolución del producto.';
+                    speechOutput = i18n.t('REFUND_DENIED_MSG');
                 } else if (payload.purchaseResult === 'NOT_ENTITLED') {
     
-                    speechOutput = 'Este producto no lo tenias comprado';
+                    speechOutput = i18n.t('REFUND_NOT_PRODUCT_MSG');
                 }
     
                 return handlerInput.responseBuilder

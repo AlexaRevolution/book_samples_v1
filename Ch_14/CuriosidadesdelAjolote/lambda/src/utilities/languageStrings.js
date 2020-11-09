@@ -29,7 +29,18 @@ module.exports = {
       NAME_SAVING: 'Estoy guardando la información!',
       NO_ADDRESS_MSG: 'Este dispositivo no tiene configurada ninguna dirección',
       REQUEST_ADDRESS_MSG: 'Necesitamos acceder a su ubicación para continuar con la Skill.',
-      HINT_TEXT_MSG: 'Intenta, \"Alexa, cuentame sobre el ajolote.\"'
+      HINT_TEXT_MSG: 'Intenta, \"Alexa, cuentame sobre el ajolote.\"',
+      AVAILABLE_PRODUCTS_MSG: 'Los productos disponibles para la compra son:',
+      AVAILABLE_PRODUCTS_REPROMPT_MSG: '¿Tienes alguna duda sobre los productos?',
+      NOT_AVAILABLE_PRODUCTS_MSG: 'Lo siento pero no encuentro ningun producto disponible',
+      UPSELL_MSG: 'Genial! Quieres saber mas sobre el producto?',
+      BUY_SUCCESS_MSG: 'Compra realizada con éxito!',
+      BUY_PURCHASED_MSG: 'Ya tienes la subscripción!',
+      BUY_DENIED_MSG: 'Se ha denegado la compra a la subcripción!',
+      BUY_ERROR_MSG: 'Ha habido un problema durante el proceso de compra, vuelva a intentarlo',
+      REFUND_SUCCESS_MSG: 'Se ha procesado la devolución correctamente',
+      REFUND_DENIED_MSG: 'Se ha denegado la devolución del producto',
+      REFUND_NOT_PRODUCT_MSG: 'Este producto no lo tenias comprado'
     },
   },
   en: {
@@ -53,7 +64,18 @@ module.exports = {
       NAME_SAVING: 'I am saving the information!',
       NO_ADDRESS_MSG: 'This device has no set any address configured',
       REQUEST_ADDRESS_MSG: 'We need to acces to your address in order to continue.',
-      HINT_TEXT_MSG: 'Try, \"Alexa, tell me something about Axolotl.\"'
+      HINT_TEXT_MSG: 'Try, \"Alexa, tell me something about Axolotl.\"',
+      AVAILABLE_PRODUCTS_MSG: 'The available products are: ',
+      AVAILABLE_PRODUCTS_REPROMPT_MSG: 'Do you have any questions about the products?',
+      NOT_AVAILABLE_PRODUCTS_MSG: 'Sorry but I can\'t find any available products',
+      UPSELL_MSG: 'Great! Do you want to know more about the product?',
+      BUY_SUCCESS_MSG: 'Successful purchase!',
+      BUY_PURCHASED_MSG: 'You already have the subscription!',
+      BUY_DENIED_MSG: 'Subscription purchase denied!',
+      BUY_ERROR_MSG: 'There was a problem during the purchase process, please try again',
+      REFUND_SUCCESS_MSG: 'The refund has been processed successfully',
+      REFUND_DENIED_MSG: 'Refund has been denied',
+      REFUND_NOT_PRODUCT_MSG: 'You did not buy this product before'
     },
   },
 };
