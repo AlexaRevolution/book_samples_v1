@@ -28,7 +28,8 @@ module.exports = {
       NAME_SAVED_OK: 'Información guardada correctamente!',
       NAME_SAVING: 'Estoy guardando la información!',
       NO_ADDRESS_MSG: 'Este dispositivo no tiene configurada ninguna dirección',
-      REQUEST_ADDRESS_MSG: 'Necesitamos acceder a su ubicación para continuar con la Skill.'
+      REQUEST_ADDRESS_MSG: 'Necesitamos acceder a su ubicación para continuar con la Skill.',
+      HINT_TEXT_MSG: 'Intenta, \"Alexa, cuentame sobre el ajolote.\"'
     },
   },
   en: {
@@ -51,7 +52,8 @@ module.exports = {
       NAME_SAVED_OK: 'Information saved succefully!',
       NAME_SAVING: 'I am saving the information!',
       NO_ADDRESS_MSG: 'This device has no set any address configured',
-      REQUEST_ADDRESS_MSG: 'We need to acces to your address in order to continue.'
+      REQUEST_ADDRESS_MSG: 'We need to acces to your address in order to continue.',
+      HINT_TEXT_MSG: 'Try, \"Alexa, tell me something about Axolotl.\"'
     },
   },
 };

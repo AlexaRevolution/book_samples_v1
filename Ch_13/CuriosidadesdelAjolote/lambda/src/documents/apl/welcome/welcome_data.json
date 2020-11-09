@@ -24,9 +24,9 @@
        "textContent":{
           "primaryText":{
              "type":"PlainText",
-             "text":"Curiosidades del Ajolote"
+             "text":"TEXT_TO_REPLACE"
           }
        },
-       "hintText":"Intenta, \"Alexa, cuentame sobre el ajolote.\""
+       "hintText":"TEXT_TO_REPLACE"
     }
  }
