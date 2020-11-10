@@ -1,0 +1,366 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "curiosities of the axolotl",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help",
+                        "help me"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "FactIntent",
+                    "slots": [],
+                    "samples": [
+                        "give me a curious fact about the axolotl",
+                        "tell me about the axolotl",
+                        "tell me a curious fact about the axolotl"
+                    ]
+                },
+                {
+                    "name": "ContactIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me the contact details",
+                        "Tell me where can I contact you",
+                        "Tell me the phone number"
+                    ]
+                },
+                {
+                    "name": "TypeAjolote",
+                    "slots": [
+                        {
+                            "name": "typesofaxolotl",
+                            "type": "ajolotes",
+                            "samples": [
+                                "{typesofaxolotl}",
+                                "It is an axolotl {typesofaxolotl}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "how is the axolotl {typesofaxolotl}",
+                        "I want to know about the axolotl {typesofaxolotl}",
+                        "tell me about the axolotl {typesofaxolotl}",
+                        "give me information about the axolotl {typesofaxolotl}"
+                    ]
+                },
+                {
+                    "name": "CaracteristicasAjoloteIntent",
+                    "slots": [
+                        {
+                            "name": "caracteristicas",
+                            "type": "caracterajolotes",
+                            "samples": [
+                                "the axolotl of {caracteristicas}",
+                                "{caracteristicas}"
+                            ],
+                            "multipleValues": {
+                                "enabled": true
+                            }
+                        }
+                    ],
+                    "samples": [
+                        "show me an axolotl {caracteristicas} ",
+                        "I would like to see an axolotl with {caracteristicas} ",
+                        "I want an axolotl {caracteristicas}",
+                        "tell me a kind of axolotl {caracteristicas}"
+                    ]
+                },
+                {
+                    "name": "AskForName",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "my name is {name}",
+                        "you can call me {name}"
+                    ]
+                },
+                {
+                    "name": "ListProductsIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me all available products"
+                    ]
+                },
+                {
+                    "name": "ProductInfoIntent",
+                    "slots": [],
+                    "samples": [
+                        "What does the subscription include"
+                    ]
+                },
+                {
+                    "name": "BuyProductIntent",
+                    "slots": [],
+                    "samples": [
+                        "I want to subscribe"
+                    ]
+                },
+                {
+                    "name": "RefundProductIntent",
+                    "slots": [],
+                    "samples": [
+                        "I want to return the subscription"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "ajolotes",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "velasci",
+                                "synonyms": [
+                                    "ambystoma",
+                                    "plateau"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gold"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "albinos"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "white",
+                                "synonyms": [
+                                    "leucistic"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "black",
+                                "synonyms": [
+                                    "wild",
+                                    "brown"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "caracterajolotes",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "small eyes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "large eyes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gelatinous"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gold"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "black"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pink"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "FactIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1138731114312"
+                    },
+                    "slots": []
+                },
+                {
+                    "name": "ContactIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1098541341484"
+                    },
+                    "slots": []
+                },
+                {
+                    "name": "TypeAjolote",
+                    "delegationStrategy": "SKILL_RESPONSE",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.879203276417"
+                    },
+                    "slots": [
+                        {
+                            "name": "typesofaxolotl",
+                            "type": "ajolotes",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.1464377225076.1304849682103",
+                                "elicitation": "Elicit.Slot.1464377225076.1304849682103"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1464377225076.1304849682103.866478225743"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "CaracteristicasAjoloteIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.556800550317"
+                    },
+                    "slots": [
+                        {
+                            "name": "caracteristicas",
+                            "type": "caracterajolotes",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.556800550317.667679821005",
+                                "elicitation": "Elicit.Slot.556800550317.667679821005"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Confirm.Intent.1138731114312",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Are you sure you want a curious fact about this little animal?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1098541341484",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "The contact number is' five five four two four zero four eight four three' and the email is 'ajolotealexadotcom'"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.879203276417",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Do you want to know about the axolotl of type {typesofaxolotl} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1464377225076.1304849682103",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What kind of axolotl is it?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.1464377225076.1304849682103",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Are you sure it's a {typesofaxolotl} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1464377225076.1304849682103.866478225743",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You have entered an invalid value"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.556800550317",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Do you want to know about axolotl with {caracteristicas} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.556800550317.667679821005",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Are you sure?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.556800550317.667679821005",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What characteristic of the axolotl do you want to know?"
+                    }
+                ]
+            }
+        ]
+    }
+}

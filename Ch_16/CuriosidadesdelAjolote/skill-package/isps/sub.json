@@ -1,0 +1,156 @@
+{
+    "inSkillProductDefinition": {
+      "version": "1.0",
+      "type": "SUBSCRIPTION",
+      "referenceName": "premium_goodbye_message",
+      "subscriptionInformation": {
+        "subscriptionPaymentFrequency": "MONTHLY",
+        "subscriptionTrialPeriodDays": 7
+      },
+      "publishingInformation": {
+        "locales": {
+          "es-ES": {
+            "name": "Suscripción Premium",
+            "summary": "Con esta suscripción vas a poder acceder a contenido premium de esta Skill",
+            "description": "Gracias a esta suscripción tendras acceso a contenido mucho antes que los demás usuarios. También accederás a contenido totalmente personalizado y exlcusivo para tí",
+            "smallIconUri": "https://www.materialui.co/materialIcons/action/donut_small_black_108x108.png",
+            "largeIconUri": "https://i.pinimg.com/originals/09/21/64/0921648c6b33b72f343438244d896191.png",
+            "examplePhrases": [
+              "Ejemplo de frase 1",
+              "Ejemplo de frase 2",
+              "Ejemplo de frase 3"
+            ],
+            "keywords": [
+              "premium, goodbye"
+            ],
+            "customProductPrompts": {
+              "purchasePromptDescription": "Con esta suscripción vas a poder acceder a contenido premium de esta Skill",
+              "boughtCardDescription": "¡Graciás por la suscripción! ¡No te arrepentirás!"
+            }
+          },
+          "en-US": {
+            "name": "Premium Subscription",
+            "summary": "With this subscription you will be able to access premium content of this Skill",
+            "description": "Thanks to this subscription you will have access to content before other users. You will also access fully personalized content exclusive to you",
+            "smallIconUri": "https://www.materialui.co/materialIcons/action/donut_small_black_108x108.png",
+            "largeIconUri": "https://i.pinimg.com/originals/09/21/64/0921648c6b33b72f343438244d896191.png",
+            "examplePhrases": [
+              "Example phrase 1",
+              "Example phrase 2",
+              "Example phrase 3"
+            ],
+            "keywords": [
+              "premium, goodbye"
+            ],
+            "customProductPrompts": {
+              "purchasePromptDescription": "With this subscription you will be able to access premium content of this Skill",
+              "boughtCardDescription": "¡Graciás por la suscripción! ¡No te arrepentirás!"
+            }
+          }
+        },
+        "distributionCountries": [
+          "AT",
+          "BE",
+          "BG",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GG",
+          "GI",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IT",
+          "JP",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MT",
+          "NL",
+          "NO",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SI",
+          "SK",
+          "UA",
+          "US"
+        ],
+        "pricing": {
+          "amazon.es": {
+            "releaseDate": "2020-08-02T00:00Z",
+            "defaultPriceListing": {
+              "price": 0.99,
+              "currency": "EUR"
+            }
+          },
+          "amazon.de": {
+            "releaseDate": "2020-08-02T00:00Z",
+            "defaultPriceListing": {
+              "price": 0.99,
+              "currency": "EUR"
+            }
+          },
+          "amazon.com": {
+            "releaseDate": "2020-08-02T00:00Z",
+            "defaultPriceListing": {
+              "price": 0.99,
+              "currency": "USD"
+            }
+          },
+          "amazon.co.jp": {
+            "releaseDate": "2020-08-02T00:00Z",
+            "defaultPriceListing": {
+              "price": 99,
+              "currency": "JPY"
+            }
+          },
+          "amazon.co.uk": {
+            "releaseDate": "2020-08-02T00:00Z",
+            "defaultPriceListing": {
+              "price": 0.99,
+              "currency": "GBP"
+            }
+          },
+          "amazon.it": {
+            "releaseDate": "2020-08-02T00:00Z",
+            "defaultPriceListing": {
+              "price": 0.99,
+              "currency": "EUR"
+            }
+          },
+          "amazon.fr": {
+            "releaseDate": "2020-08-02T00:00Z",
+            "defaultPriceListing": {
+              "price": 0.99,
+              "currency": "EUR"
+            }
+          }
+        },
+        "taxInformation": {
+          "category": "SOFTWARE"
+        }
+      },
+      "privacyAndCompliance": {
+        "locales": {
+          "es-ES": {
+            "privacyPolicyUrl": "https://www.amazon.com"
+          },
+          "en-US": {
+            "privacyPolicyUrl": "https://www.amazon.com"
+          }
+        }
+      },
+      "purchasableState": "PURCHASABLE"
+    }
+  }
+  
