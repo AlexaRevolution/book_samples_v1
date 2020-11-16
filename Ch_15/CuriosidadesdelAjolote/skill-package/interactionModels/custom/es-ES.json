@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "curiosidades del ajolote demo noviembre",
+            "invocationName": "curiosidades del ajolote",
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
