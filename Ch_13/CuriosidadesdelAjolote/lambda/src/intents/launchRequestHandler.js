@@ -32,9 +32,9 @@ module.exports = {
           if (address == undefined 
               || (address.addressLine1 === null && address.stateOrRegion === null)) {
           
-              return handlerInput.responseBuilder
-                  .speak(i18n.t('NO_ADDRESS_MSG'))
-                  .getResponse();
+              //running in simulator
+              sessionAttributes['location'] = 'Test Address';
+              attributesManager.setSessionAttributes(sessionAttributes);
           } else {
 
               const completeAddress = address.addressLine1;
