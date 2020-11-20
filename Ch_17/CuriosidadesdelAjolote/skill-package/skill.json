@@ -64,6 +64,9 @@
       },
       {
         "name": "alexa::devices:all:notifications:write"
+      },
+      {
+        "name": "alexa::alerts:reminders:skill:readwrite"
       }
     ],
     "publishingInformation": {
