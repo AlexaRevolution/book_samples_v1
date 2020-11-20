@@ -43,9 +43,10 @@ module.exports = {
       REFUND_NOT_PRODUCT_MSG: 'Este producto no lo tenias comprado',
       ACCOUNT_LINKING_NOT_DONE_MSG: 'Debes registrarte con tu usuario de Amazon. Te he nviado más informacion a tu app de Alexa',
       REMINDER_MSG: 'Este recordatorio es para hacerte saber que el ajolote se encuentra en peligro de extinción.',
-      REMINDER_CREATED_SUCCESS: '¡Ha programado con éxito un recordatorio diario para saber más sobre los Ajolotes!',
+      REMINDER_CREATED_SUCCESS: '¡Ha programado con éxito un recordatorio para mañana para saber más sobre los Ajolotes!',
       REMINDER_PERMISSIONS:'Por favor habilite los permisos de recordatorios en la aplicación de Amazon Alexa.',
-      REMINDER_SCHEDULED: '¡Recuerda que los ajolotes estan en peligro de extinción!'
+      REMINDER_SCHEDULED: '¡Recuerda que los ajolotes estan en peligro de extinción!',
+      REMINDER_CREATED_FAILURE: '¡Error al crear el recordatorio!'
     },
   },
   en: {
@@ -83,9 +84,10 @@ module.exports = {
       REFUND_NOT_PRODUCT_MSG: 'You did not buy this product before',
       ACCOUNT_LINKING_NOT_DONE_MSG: 'You must register with your Amazon username. I have sent you more information to your Alexa app',
       REMINDER_MSG: 'This reminder is to let you know that the axolotl is in danger of extinction.',
-      REMINDER_CREATED_SUCCESS: 'You have successfully scheduled a daily reminder to learn more about the Axolotls!',
+      REMINDER_CREATED_SUCCESS: 'You have successfully scheduled a reminder for tomorrow to learn more about the Axolotls!',
       REMINDER_PERMISSIONS:'Please enable the reminder permissions in the Amazon Alexa App.',
-      REMINDER_SCHEDULED: 'Remember that axolotls are in danger of extinction!'
+      REMINDER_SCHEDULED: 'Remember that axolotls are in danger of extinction!',
+      REMINDER_CREATED_FAILURE: 'There was an error creating the reminder!'
     },
   },
 };

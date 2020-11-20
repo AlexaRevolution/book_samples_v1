@@ -9,26 +9,26 @@ module.exports = {
       return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
                 && Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.YesIntent';
     },
-    handle(handlerInput) {
-      const remindersApiClient = handlerInput.serviceClientFactory.getReminderManagementServiceClient(),
-      const { permissions } = handlerInput.requestEnvelope.context.System.user
+    async handle(handlerInput) {
+      const remindersApiClient = handlerInput.serviceClientFactory.getReminderManagementServiceClient();
+      const { permissions } = handlerInput.requestEnvelope.context.System.user;
 
       if(!permissions) {
         return handlerInput.responseBuilder
           .speak(i18n.t('REMINDER_PERMISSIONS'))
           .withAskForPermissionsConsentCard(["alexa::alerts:reminders:skill:readwrite"])
-          .getResponse()
+          .getResponse();
         }
 
         const reminderRequest = {
             trigger: {
               type: "SCHEDULED_RELATIVE",
-              offsetInSeconds: "15",
+              offsetInSeconds: "86400", //one day in seconds
             },
             alertInfo: {
               spokenInfo: {
                 content: [{
-                  locale: "es-MX",
+                  locale: Alexa.getLocale(handlerInput.requestEnvelope),
                   text: i18n.t('REMINDER_SCHEDULED'),
                 }],
               },
@@ -36,15 +36,25 @@ module.exports = {
             pushNotification: {
               status: "ENABLED"
             }
-          }
+          } 
 
-      remindersApiClient.createReminder(reminderRequest)
+      try {
 
-      const speakOutput = i18n.t('REMINDER_CREATED_SUCCESS');
+        await remindersApiClient.createReminder(reminderRequest);
+
+      } catch(error) {
+       
+        console.log(`~~~ Error: ${error}`);
+        return handlerInput.responseBuilder
+            .speak(i18n.t('REMINDER_CREATED_FAILURE'))
+            .getResponse();
+      }
+
+      
 
       return handlerInput.responseBuilder
-        .speak(speakOutput)
-        .reprompt(speakOutput)  
+        .speak(i18n.t('REMINDER_CREATED_SUCCESS'))
+        .reprompt(i18n.t('REMINDER_CREATED_SUCCESS'))  
         .getResponse();
     },
   },
