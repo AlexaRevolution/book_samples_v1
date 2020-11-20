@@ -1,0 +1,7 @@
+{
+  "isps": {
+    "premium_goodbye_message": {
+      "path": "file://isps/sub.json"
+    }
+  }
+}
