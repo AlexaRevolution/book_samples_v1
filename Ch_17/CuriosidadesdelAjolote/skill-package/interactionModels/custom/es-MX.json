@@ -90,12 +90,13 @@
                     "slots": [
                         {
                             "name": "name",
-                            "type": "AMAZON.SearchQuery"
+                            "type": "AMAZON.FirstName"
                         }
                     ],
                     "samples": [
                         "me llamo {name}",
-                        "mi nombre es {name}"
+                        "mi nombre es {name}",
+                        "{name}"
                     ]
                 }
             ],

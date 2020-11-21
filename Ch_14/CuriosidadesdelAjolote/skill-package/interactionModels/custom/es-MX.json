@@ -95,7 +95,8 @@
                     ],
                     "samples": [
                         "me llamo {name}",
-                        "mi nombre es {name}"
+                        "mi nombre es {name}",
+                        "{name}"
                     ]
                 }
             ],
