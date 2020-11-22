@@ -36,6 +36,15 @@
                     ]
                 },
                 {
+                    "name": "CreateReminderIntent",
+                    "slots": [],
+                    "samples": [
+                        "schedule a reminder",
+                        "create a reminder",
+                        "reminder"
+                    ]
+                },
+                {
                     "name": "ContactIntent",
                     "slots": [],
                     "samples": [

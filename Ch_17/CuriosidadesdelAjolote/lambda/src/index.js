@@ -25,12 +25,12 @@ let { PersistentAttributesRequestInterceptor } = require('./interceptors/persist
 let { SaveAttributesResponseInterceptor } = require('./interceptors/savePersistentResponseInterceptor');
 let { AskForNameIntentHandler } = require('./intents/askForNameIntentHandler');
 let { getPersistenceAdapter, getLocalDynamoDBClient } = require('./utilities/util');
-const { ProductInfoIntentHandler } = require('./intents/productInfoIntentHandler');
-const { BuyProductIntentHandler } = require('./intents/buyProductIntentHandler');
-const { UpsellOrBuyResponseHandler } = require('./intents/upsellOrBuyResponseHandler');
-const { RefundProductIntentHandler } = require('./intents/refundProductIntentHandler');
-const { ListProductsIntentHandler } = require('./intents/listProductsIntentHandler');
-const { CancelProductResponseHandler } = require('./intents/cancelProductResponseHandler');
+let { ProductInfoIntentHandler } = require('./intents/productInfoIntentHandler');
+let { BuyProductIntentHandler } = require('./intents/buyProductIntentHandler');
+let { UpsellOrBuyResponseHandler } = require('./intents/upsellOrBuyResponseHandler');
+let { RefundProductIntentHandler } = require('./intents/refundProductIntentHandler');
+let { ListProductsIntentHandler } = require('./intents/listProductsIntentHandler');
+let { CancelProductResponseHandler } = require('./intents/cancelProductResponseHandler');
 
 var local = process.env.DYNAMODB_LOCAL
 let persistenceAdapter;
@@ -50,10 +50,10 @@ exports.handler = Alexa.SkillBuilders.custom()
     .addRequestHandlers(
         LaunchRequestHandler,
         FactHandler,
+        CreateReminderIntentHandler,
         AskForNameIntentHandler,
         ContactHandler,
         CaracteristicasAjoloteHandler,
-        CreateReminderIntentHandler,
         NotCompletedTypeAjoloteHandler,
         CompletedTypeAjoloteHandler,
         HelpIntentHandler,

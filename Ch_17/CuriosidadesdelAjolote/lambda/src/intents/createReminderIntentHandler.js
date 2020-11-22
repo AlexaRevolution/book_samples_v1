@@ -23,13 +23,13 @@ module.exports = {
         const reminderRequest = {
             trigger: {
               type: "SCHEDULED_RELATIVE",
-              offsetInSeconds: "86400", //one day in seconds
+              offsetInSeconds: "15",
             },
             alertInfo: {
               spokenInfo: {
                 content: [{
-                  locale: Alexa.getLocale(handlerInput.requestEnvelope),
-                  text: i18n.t('REMINDER_SCHEDULED'),
+                  locale: "es-MX",
+                text: i18n.t('REMINDER_SCHEDULED'),
                 }],
               },
             },
@@ -38,17 +38,15 @@ module.exports = {
             }
           } 
 
-      try {
-
-        await remindersApiClient.createReminder(reminderRequest);
-
+          try {
+            await remindersApiClient.createReminder(reminderRequest);
             } catch(error) {
-       
-        console.log(`~~~ Error: ${error}`);
-        return handlerInput.responseBuilder
-            .speak(i18n.t('REMINDER_CREATED_FAILURE'))
-            .getResponse();
-      }
+           
+            console.log(`~~~~ Error ${error}`)
+            return handlerInput.responseBuilder
+                .speak(i18n.t('REMINDER_CREATED_FAILURE'))
+                .getResponse();
+          }
 
       return handlerInput.responseBuilder
         .speak(i18n.t('REMINDER_CREATED_SUCCESS'))
