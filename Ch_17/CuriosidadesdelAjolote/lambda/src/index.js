@@ -9,6 +9,7 @@ let { LaunchRequestHandler } = require('./intents/launchRequestHandler');
 let { FactHandler } = require('./intents/factHandler');
 let { ContactHandler } = require('./intents/contactHandler');
 let { CaracteristicasAjoloteHandler } = require('./intents/caracteristicasAjoloteHandler');
+let { CreateReminderIntentHandler } = require('./intents/createReminderIntentHandler');
 let { NotCompletedTypeAjoloteHandler } = require('./intents/typeAjoloteManualHandler');
 let { CompletedTypeAjoloteHandler } = require('./intents/typeAjoloteManualHandler');
 let { HelpIntentHandler } = require('./intents/helpIntentHandler');
@@ -28,7 +29,6 @@ const { ProductInfoIntentHandler } = require('./intents/productInfoIntentHandler
 const { BuyProductIntentHandler } = require('./intents/buyProductIntentHandler');
 const { UpsellOrBuyResponseHandler } = require('./intents/upsellOrBuyResponseHandler');
 const { RefundProductIntentHandler } = require('./intents/refundProductIntentHandler');
-const { CreateReminderIntentHandler } = require('./intents/createReminderIntentHandler');
 const { ListProductsIntentHandler } = require('./intents/listProductsIntentHandler');
 const { CancelProductResponseHandler } = require('./intents/cancelProductResponseHandler');
 
@@ -53,6 +53,7 @@ exports.handler = Alexa.SkillBuilders.custom()
         AskForNameIntentHandler,
         ContactHandler,
         CaracteristicasAjoloteHandler,
+        CreateReminderIntentHandler,
         NotCompletedTypeAjoloteHandler,
         CompletedTypeAjoloteHandler,
         HelpIntentHandler,
@@ -61,7 +62,6 @@ exports.handler = Alexa.SkillBuilders.custom()
         BuyProductIntentHandler,
         UpsellOrBuyResponseHandler,
         RefundProductIntentHandler,
-        CreateReminderIntentHandler,
         CancelProductResponseHandler,
         CancelAndStopIntentHandler,
         FallbackIntentHandler,

@@ -7,7 +7,7 @@ module.exports = {
    CreateReminderIntentHandler : {
     canHandle(handlerInput) {
       return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
-                && Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.YesIntent';
+                && Alexa.getIntentName(handlerInput.requestEnvelope) === 'CreateReminderIntent';
     },
     async handle(handlerInput) {
       const remindersApiClient = handlerInput.serviceClientFactory.getReminderManagementServiceClient();
@@ -42,15 +42,13 @@ module.exports = {
 
         await remindersApiClient.createReminder(reminderRequest);
 
-      } catch(error) {
+            } catch(error) {
        
         console.log(`~~~ Error: ${error}`);
         return handlerInput.responseBuilder
             .speak(i18n.t('REMINDER_CREATED_FAILURE'))
             .getResponse();
       }
-
-      
 
       return handlerInput.responseBuilder
         .speak(i18n.t('REMINDER_CREATED_SUCCESS'))
