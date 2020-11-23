@@ -29,7 +29,7 @@ module.exports = {
               spokenInfo: {
                 content: [{
                   locale: "es-MX",
-                text: i18n.t('REMINDER_SCHEDULED'),
+                  text: i18n.t('REMINDER_SCHEDULED'),
                 }],
               },
             },

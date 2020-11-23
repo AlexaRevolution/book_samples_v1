@@ -8,8 +8,8 @@
             "default": {
               "lambda": {
                 "arn": "arn:aws:lambda:us-east-1:171489363667:function:ask-curiosidadesdelajolote-default-default-1605561413789",
-                "lastModified": "2020-11-22T22:16:49.846+0000",
-                "revisionId": "6ad6f614-7205-4fd7-8670-67ae095d34e0"
+                "lastModified": "2020-11-23T03:45:45.124+0000",
+                "revisionId": "76cab68f-c123-4bfd-94c4-89caa3b2a1b6"
               },
               "iamRole": "arn:aws:iam::171489363667:role/ask-lambda-CuriosidadesdelAjolote-1605561412652"
             }
@@ -18,11 +18,11 @@
       },
       "skillId": "amzn1.ask.skill.f89a8528-dc44-452e-be50-1c5d9628e2ff",
       "skillMetadata": {
-        "lastDeployHash": "1jMZ60ccutH8pikNGNadVvSvenU="
+        "lastDeployHash": "gX07sJgzxEqJhEEfPworWP28SXg="
       },
       "code": {
         "default": {
-          "lastDeployHash": "QGDDuZg4vk6VeLF06ZKi59WSJL4="
+          "lastDeployHash": "6PV0DAqrAYyYDENjDZCSKIZGVeo="
         }
       }
     }

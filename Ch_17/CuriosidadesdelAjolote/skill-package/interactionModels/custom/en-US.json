@@ -45,6 +45,31 @@
                     ]
                 },
                 {
+                    "name": "CreateTimerIntent",
+                    "slots": [],
+                    "samples": [
+                        "timer",
+                        "create a timer",
+                        "generate a timer"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "yeap",
+                        "yes",
+                        "of course"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "negative",
+                        "noup",
+                        "no"
+                    ]
+                },
+                {
                     "name": "ContactIntent",
                     "slots": [],
                     "samples": [

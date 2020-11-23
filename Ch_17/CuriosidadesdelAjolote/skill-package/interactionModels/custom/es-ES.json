@@ -48,6 +48,37 @@
                     ]
                 },
                 {
+                    "name": "CreateTimerIntent",
+                    "slots": [],
+                    "samples": [
+                        "temporizador",
+                        "crea un temporizador",
+                        "genera un temporizador"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "chi",
+                        "yeap",
+                        "see",
+                        "sip",
+                        "por supuesto",
+                        "claro",
+                        "simon",
+                        "si"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "negativo",
+                        "noup",
+                        "nel",
+                        "no"
+                    ]
+                },
+                {
                     "name": "ContactIntent",
                     "slots": [],
                     "samples": [

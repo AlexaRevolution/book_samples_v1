@@ -69,7 +69,6 @@ module.exports = {
                   .speak(i18n.t('REQUEST_ADDRESS_MSG'))
                   .withAskForPermissionsConsentCard(['read::alexa:device:all:address'])
                   .getResponse();
-
           }
       }
 
@@ -92,8 +91,6 @@ module.exports = {
       }
 
       const speakOutput = i18n.t('WELCOME_MSG', {name: persitentAttributes.name});
-
-      const speakOutputReminder = i18n.t('REMINDER_MSG');
 
       const hintText = i18n.t('HINT_TEXT_MSG');
 
