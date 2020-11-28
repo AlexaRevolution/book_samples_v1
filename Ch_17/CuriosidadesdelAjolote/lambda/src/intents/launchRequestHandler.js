@@ -26,7 +26,7 @@ module.exports = {
 
       let { accessToken } = handlerInput.requestEnvelope.context.System.user;
       
-      /** if (!accessToken) {
+      if (!accessToken) {
         return handlerInput.responseBuilder
           .speak(i18n.t('ACCOUNT_LINKING_NOT_DONE_MSG'))
           .withLinkAccountCard()
@@ -41,7 +41,7 @@ module.exports = {
           } catch (error) {
             console.error(error);
           }
-      }**/
+      }
 
       try {
 

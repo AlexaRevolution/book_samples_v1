@@ -28,7 +28,7 @@ module.exports = {
             alertInfo: {
               spokenInfo: {
                 content: [{
-                  locale: "es-MX",
+                  locale: Alexa.getLocale(handlerInput.requestEnvelope),
                   text: i18n.t('REMINDER_SCHEDULED'),
                 }],
               },

@@ -4,25 +4,7 @@
     "default": {
       "skillInfrastructure": {
         "@ask-cli/lambda-deployer": {
-          "deployState": {
-            "default": {
-              "lambda": {
-                "arn": "arn:aws:lambda:us-east-1:171489363667:function:ask-curiosidadesdelajolote-default-default-1605561413789",
-                "lastModified": "2020-11-28T03:50:10.039+0000",
-                "revisionId": "084dc8fe-d8c2-41a8-aa2d-bc8f396c843a"
-              },
-              "iamRole": "arn:aws:iam::171489363667:role/ask-lambda-CuriosidadesdelAjolote-1605561412652"
-            }
-          }
-        }
-      },
-      "skillId": "amzn1.ask.skill.f89a8528-dc44-452e-be50-1c5d9628e2ff",
-      "skillMetadata": {
-        "lastDeployHash": "6NZUhLQjX2Yon8mYJSqccz6e3xo="
-      },
-      "code": {
-        "default": {
-          "lastDeployHash": "GNMJQeJFonnXhhVl8/rnDUlprJ4="
+          "deployState": {}
         }
       }
     }
