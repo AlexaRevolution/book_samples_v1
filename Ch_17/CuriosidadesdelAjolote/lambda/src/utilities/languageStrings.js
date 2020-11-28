@@ -46,7 +46,15 @@ module.exports = {
       REMINDER_CREATED_SUCCESS: '¡Ha programado con éxito un recordatorio para saber más sobre los Ajolotes!',
       REMINDER_PERMISSIONS:'Por favor habilite los permisos de recordatorios en la aplicación de Amazon Alexa.',
       REMINDER_SCHEDULED: '¡Recuerda que los ajolotes estan en peligro de extinción!',
-      REMINDER_CREATED_FAILURE: '¡Error al crear el recordatorio!'
+      REMINDER_CREATED_FAILURE: '¡Error al crear el recordatorio!',
+      TIMER_FINISH: 'Esto termina tu temporizador.',
+      TIMER_PERMISSIONS:'Curiosidades del Ajolote necesita permiso para acceder a los temporizadores.',
+      TIMER_ASK_CONFIG_PERMISSIONS:'¿Te gustaría configurar un temporizador?',
+      TIMER_SORRY_CONFIG_PERMISSIONS:'Disculpa, no escuché tu respuesta, Curiosidades del Ajolote requiere tu permiso.',
+      TIMER_ACCEPTED: 'Ahora que tenemos tu permiso para configurar un temporizador. ¿Te gustaría comenzar?',
+      TIMER_NOT_ACCEPTED: 'Sin permisos, no puedo configurar un temporizador. Así que supongo que esto un adiós.',
+      TIMER_CREATED_SUCCESS: '¡Ha programado con éxito un temporizador',
+      TIMER_NOT_STARTED: 'Esta bien, no iniciaré un temporizador.'
     },
   },
   en: {
@@ -87,7 +95,17 @@ module.exports = {
       REMINDER_CREATED_SUCCESS: 'You have successfully scheduled a reminder to learn more about the Axolotls!',
       REMINDER_PERMISSIONS:'Please enable the reminder permissions in the Amazon Alexa App.',
       REMINDER_SCHEDULED: 'Remember that axolotls are in danger of extinction!',
-      REMINDER_CREATED_FAILURE: 'There was an error creating the reminder!'
+      REMINDER_CREATED_FAILURE: 'There was an error creating the reminder!',
+      TIMER_FINISH: 'This ends your timer.',
+      TIMER_PERMISSIONS:'Curiosities of the Axolotl need your permission to access the timers.',
+      TIMER_ASK_CONFIG_PERMISSIONS:'Would you like to set a timer?',
+
+      TIMER_SORRY_CONFIG_PERMISSIONS:'Sorry, I did not hear your response, Curiosities of the Axolotl requires your permission.',
+      TIMER_ACCEPTED: 'Now that we have your permission to set a timer. Would you like to start?',
+      TIMER_NOT_ACCEPTED: 'Without permissions, I cannot set a timer. So I guess this is goodbye.',
+      
+      TIMER_CREATED_SUCCESS: 'You have successfully set a timer',
+      TIMER_NOT_STARTED: 'Okay, I won\'t start a timer.'
     },
   },
 };

@@ -10,7 +10,9 @@ let { FactHandler } = require('./intents/factHandler');
 let { ContactHandler } = require('./intents/contactHandler');
 let { CaracteristicasAjoloteHandler } = require('./intents/caracteristicasAjoloteHandler');
 let { CreateReminderIntentHandler } = require('./intents/createReminderIntentHandler');
-let { CreateTimerIntentHandler } = require('./intents/createTimerIntentHandler');
+let { CreateTimerIntentHandler } = require('./intents/connectionsResponsetHandler');
+let { ConnectionsResponsetHandler } = require('./intents/createTimerIntentHandler');
+let { YesNoIntentHandler } = require('./intents/yesNoIntentHandler');
 let { NotCompletedTypeAjoloteHandler } = require('./intents/typeAjoloteManualHandler');
 let { CompletedTypeAjoloteHandler } = require('./intents/typeAjoloteManualHandler');
 let { HelpIntentHandler } = require('./intents/helpIntentHandler');
@@ -53,6 +55,8 @@ exports.handler = Alexa.SkillBuilders.custom()
         FactHandler,
         CreateReminderIntentHandler,
         CreateTimerIntentHandler,
+        ConnectionsResponsetHandler,
+        YesNoIntentHandler,
         AskForNameIntentHandler,
         ContactHandler,
         CaracteristicasAjoloteHandler,

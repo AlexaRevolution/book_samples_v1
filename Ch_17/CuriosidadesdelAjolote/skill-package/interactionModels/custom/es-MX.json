@@ -67,7 +67,6 @@
                         "por supuesto",
                         "clarin",
                         "claro",
-                        "simon",
                         "si"
                     ]
                 },
@@ -137,8 +136,7 @@
                     ],
                     "samples": [
                         "me llamo {name}",
-                        "mi nombre es {name}",
-                        "{name}"
+                        "mi nombre es {name}"
                     ]
                 }
             ],
