@@ -100,11 +100,9 @@ module.exports = {
       TIMER_FINISH: 'Axolotel\'s timer.',
       TIMER_PERMISSIONS:'Curiosities of the Axolotl need your permission to access the timers.',
       TIMER_ASK_CONFIG_PERMISSIONS:'Would you like to set a timer?',
-
       TIMER_SORRY_CONFIG_PERMISSIONS:'Sorry, I did not hear your response, Curiosities of the Axolotl requires your permission.',
       TIMER_ACCEPTED: 'Now that we have your permission to set a timer. Would you like to start?',
-      TIMER_NOT_ACCEPTED: 'Without permissions, I cannot set a timer. So I guess this is goodbye.',
-      
+      TIMER_NOT_ACCEPTED: 'Without permissions, I cannot set a timer. So I guess this is goodbye.', 
       TIMER_CREATED_SUCCESS: 'You have successfully set a timer',
       TIMER_CREATED_ERROR: 'There was an error creating the timer',
       TIMER_NOT_STARTED: 'Okay, I won\'t start a timer.'

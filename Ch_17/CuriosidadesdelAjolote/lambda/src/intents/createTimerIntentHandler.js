@@ -15,8 +15,6 @@ module.exports = {
             .speak(i18n.t('TIMER_ASK_CONFIG_PERMISSIONS'))
             .reprompt(i18n.t('TIMER_ASK_CONFIG_PERMISSIONS'))
             .getResponse();
-        
-
     },
   },
 };
