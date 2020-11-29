@@ -1,0 +1,409 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "curiosidades del ajolote",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancela",
+                        "cancelar"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "ayuda",
+                        "ayudame"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "alto",
+                        "detente",
+                        "para"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "FactIntent",
+                    "slots": [],
+                    "samples": [
+                        "dame un dato curioso del ajolote",
+                        "cuentame sobre el ajolote",
+                        "dime un dato curioso del ajolote"
+                    ]
+                },
+                {
+                    "name": "CreateReminderIntent",
+                    "slots": [],
+                    "samples": [
+                        "programa un recordatorio",
+                        "crea un recordatorio",
+                        "recordatorio"
+                    ]
+                },
+                {
+                    "name": "CreateTimerIntent",
+                    "slots": [],
+                    "samples": [
+                        "temporizador",
+                        "crea un temporizador",
+                        "genera un temporizador"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "chi",
+                        "yeap",
+                        "see",
+                        "sip",
+                        "por supuesto",
+                        "claro",
+                        "si"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "negativo",
+                        "noup",
+                        "nel",
+                        "no"
+                    ]
+                },
+                {
+                    "name": "ContactIntent",
+                    "slots": [],
+                    "samples": [
+                        "Dame los detalles de contacto",
+                        "Dime donde puedo contactarlos",
+                        "Dime el numero telefonico"
+                    ]
+                },
+                {
+                    "name": "TypeAjolote",
+                    "slots": [
+                        {
+                            "name": "typesofaxolotl",
+                            "type": "ajolotes",
+                            "samples": [
+                                "{typesofaxolotl}",
+                                "Es un ajolote {typesofaxolotl}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "como es el ajolote {typesofaxolotl}",
+                        "quiero saber sobre el ajolote {typesofaxolotl}",
+                        "cuentame sobre el ajolote {typesofaxolotl}",
+                        "dime sobre el ajolote {typesofaxolotl}"
+                    ]
+                },
+                {
+                    "name": "CaracteristicasAjoloteIntent",
+                    "slots": [
+                        {
+                            "name": "caracteristicas",
+                            "type": "caracterajolotes",
+                            "samples": [
+                                "el ajolote de {caracteristicas}",
+                                "{caracteristicas}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "muestrame un ajolote {caracteristicas} ",
+                        "me gustaria ver un ajolote con {caracteristicas} ",
+                        "quiero un ajolote {caracteristicas}",
+                        "dime un ajolote de tipo de {caracteristicas}"
+                    ]
+                },
+                {
+                    "name": "AskForName",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "me llamo {name}",
+                        "mi nombre es {name}"
+                    ]
+                },
+                {
+                    "name": "ListProductsIntent",
+                    "slots": [],
+                    "samples": [
+                        "dime el listado de productos"
+                    ]
+                },
+                {
+                    "name": "ProductInfoIntent",
+                    "slots": [],
+                    "samples": [
+                        "Que contiene la subscripción"
+                    ]
+                },
+                {
+                    "name": "BuyProductIntent",
+                    "slots": [],
+                    "samples": [
+                        "Quiero suscribirme",
+                        "Quiero subscribirme"
+                    ]
+                },
+                {
+                    "name": "RefundProductIntent",
+                    "slots": [],
+                    "samples": [
+                        "Quiero devolver la subscripción"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "ajolotes",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "velasci",
+                                "synonyms": [
+                                    "ambystoma",
+                                    "altiplano"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gold",
+                                "synonyms": [
+                                    "dorado"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "albinos"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blancos",
+                                "synonyms": [
+                                    "leucisticos"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "negro",
+                                "synonyms": [
+                                    "silvestre",
+                                    "pardo"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "caracterajolotes",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "verde"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ojos pequeños"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ojos grandes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gelatinoso"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dorado"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "negro"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rosa"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "FactIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1138731114312"
+                    },
+                    "slots": []
+                },
+                {
+                    "name": "ContactIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1098541341484"
+                    },
+                    "slots": []
+                },
+                {
+                    "name": "TypeAjolote",
+                    "delegationStrategy": "SKILL_RESPONSE",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.879203276417"
+                    },
+                    "slots": [
+                        {
+                            "name": "typesofaxolotl",
+                            "type": "ajolotes",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.1464377225076.1304849682103",
+                                "elicitation": "Elicit.Slot.1464377225076.1304849682103"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1464377225076.1304849682103.866478225743"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "CaracteristicasAjoloteIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.556800550317"
+                    },
+                    "slots": [
+                        {
+                            "name": "caracteristicas",
+                            "type": "caracterajolotes",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.556800550317.667679821005",
+                                "elicitation": "Elicit.Slot.556800550317.667679821005"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Confirm.Intent.1138731114312",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Seguro que quieres un dato curioso de este animalito?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1098541341484",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "El número de contacto es 'cinco cinco cuatro dos cuatro cero cuatro ocho cuatro tres' y el correo electrónico es 'ajolotealexadotcom' ¿necesitas más informacion?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.879203276417",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Quieres saber sobre el ajolote de tipo {typesofaxolotl} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1464377225076.1304849682103",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Qué tipo de ajolote es?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.1464377225076.1304849682103",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿estás seguro que es un {typesofaxolotl} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1464377225076.1304849682103.866478225743",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Has introducido un valor no válido"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.556800550317",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Quieres saber del ajaolote con {caracteristicas} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.556800550317.667679821005",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Estás seguro?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.556800550317.667679821005",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Que caracteristica del ajolote quieres saber?"
+                    }
+                ]
+            }
+        ]
+    }
+}
