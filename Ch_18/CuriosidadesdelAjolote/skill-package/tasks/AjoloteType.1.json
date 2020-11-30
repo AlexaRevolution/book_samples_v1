@@ -1,0 +1,100 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Tarea para contar una curiosidad del ajolote por tipo",
+        "version": "1",
+        "x-amzn-alexa-access-scope": "public",
+        "x-amzn-display-details": {
+            "es-MX": {
+                "title": "Una tarea para obtener una curiosidad del ajolote"
+            },
+            "es-ES": {
+                "title": "Una tarea para obtener una curiosidad del ajolote"
+            },
+            "en-US": {
+                "title": "A task to get a curiosity of the axolotl"
+            }
+        }
+    },
+    "tags": [{
+            "name": "Ajolote por tipo"
+        }],
+    "paths": {
+        "/AjoloteType": {
+            "summary": "Ajolote por Tipo",
+            "description": "Para dar una curiosidad por tipo",
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Input"
+                            },
+                            "examples": {
+                                "factOfLeucistico": {
+                                    "summary": "Una entrada de ejemplo para obtener una curiosidad del ajolote leucístico",
+                                    "description": "Las entradas de ejemplo se utilizarían para la validación de la tarea.",
+                                    "value": {
+                                        "type": "leucístico"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Cuando la curiosidad se entrega con éxito",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/SuccessfulResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Cuando faltan parámetros, p. Ej. falta el tipo"
+                    },
+                    "404": {
+                        "description": "Cuando el parámetro dado falla en una validación, p. Ej. tipo de ajolote inexistente"
+                    },
+                    "500": {
+                        "description": "Cuando hay un error al recuperar la curiosidad"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Input": {
+                "type": "object",
+                "properties": {
+                    "types": {
+                        "type": "string",
+                        "x-amzn-display-details": {
+                            "es-MX": {
+                                "name": "Tipo de Ajolote"
+                            },
+                            "es-ES": {
+                                "name": "Tipo de Ajolote"
+                            },
+                            "en-US": {
+                                "name": "Axolotl Type"
+                            }
+                        }
+                    }
+                }
+            },
+            "SuccessfulResponse": {
+                "type": "object",
+                "properties": {
+                    "payload": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+ } 

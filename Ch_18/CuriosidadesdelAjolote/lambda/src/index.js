@@ -5,6 +5,7 @@
 // session persistence, api calls, and more.
 const Alexa = require('ask-sdk-core');
 
+let { AjoloteTaskHandler } = require('./intents/ajoloteTaskHandler');
 let { LaunchRequestHandler } = require('./intents/launchRequestHandler');
 let { FactHandler } = require('./intents/factHandler');
 let { ContactHandler } = require('./intents/contactHandler');
@@ -13,6 +14,7 @@ let { CreateReminderIntentHandler } = require('./intents/createReminderIntentHan
 let { ConnectionsResponsetHandler } = require('./intents/connectionsResponseHandler');
 let { CreateTimerIntentHandler } = require('./intents/createTimerIntentHandler');
 let { YesNoIntentHandler } = require('./intents/yesNoIntentHandler');
+
 let { NotCompletedTypeAjoloteHandler } = require('./intents/typeAjoloteManualHandler');
 let { CompletedTypeAjoloteHandler } = require('./intents/typeAjoloteManualHandler');
 let { HelpIntentHandler } = require('./intents/helpIntentHandler');
@@ -51,12 +53,14 @@ if(local === 'true'){
 // defined are included below. The order matters - they're processed top to bottom.
 exports.handler = Alexa.SkillBuilders.custom()
     .addRequestHandlers(
+        AjoloteTaskHandler,
         LaunchRequestHandler,
         FactHandler,
         CreateReminderIntentHandler,
         CreateTimerIntentHandler,
         ConnectionsResponsetHandler,
         YesNoIntentHandler,
+        
         AskForNameIntentHandler,
         ContactHandler,
         CaracteristicasAjoloteHandler,

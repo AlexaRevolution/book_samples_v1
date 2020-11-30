@@ -55,7 +55,8 @@ module.exports = {
       TIMER_NOT_ACCEPTED: 'Sin permisos, no puedo configurar un temporizador. Así que supongo que esto un adiós.',
       TIMER_CREATED_SUCCESS: '¡Ha programado con éxito un temporizador',
       TIMER_CREATED_ERROR: 'Hubo un error creando el timer',
-      TIMER_NOT_STARTED: 'Esta bien, no iniciaré un temporizador.'
+      TIMER_NOT_STARTED: 'Esta bien, no iniciaré un temporizador.',
+      CUSTOM_TASK_SUCCESS: 'Custom Task ejecutada correctamente.'
     },
   },
   en: {
@@ -105,7 +106,8 @@ module.exports = {
       TIMER_NOT_ACCEPTED: 'Without permissions, I cannot set a timer. So I guess this is goodbye.', 
       TIMER_CREATED_SUCCESS: 'You have successfully set a timer',
       TIMER_CREATED_ERROR: 'There was an error creating the timer',
-      TIMER_NOT_STARTED: 'Okay, I won\'t start a timer.'
+      TIMER_NOT_STARTED: 'Okay, I won\'t start a timer.',
+      CUSTOM_TASK_SUCCESS: 'Custom Task successfully executed.'
     },
   },
 };

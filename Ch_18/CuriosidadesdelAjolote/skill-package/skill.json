@@ -2,6 +2,12 @@
   "manifest": {
     "apis": {
       "custom": {
+        "tasks": [
+          {
+            "name": "AjoloteType",
+            "version": "1"
+          }
+        ],
         "interfaces": [
           {
             "supportedViewports": [
