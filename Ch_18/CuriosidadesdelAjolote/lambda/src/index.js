@@ -14,12 +14,12 @@ let { CreateReminderIntentHandler } = require('./intents/createReminderIntentHan
 let { ConnectionsResponsetHandler } = require('./intents/connectionsResponseHandler');
 let { CreateTimerIntentHandler } = require('./intents/createTimerIntentHandler');
 let { YesNoIntentHandler } = require('./intents/yesNoIntentHandler');
-
 let { NotCompletedTypeAjoloteHandler } = require('./intents/typeAjoloteManualHandler');
 let { CompletedTypeAjoloteHandler } = require('./intents/typeAjoloteManualHandler');
 let { HelpIntentHandler } = require('./intents/helpIntentHandler');
 let { CancelAndStopIntentHandler } = require('./intents/cancelAndStopIntentHandler');
 let { FallbackIntentHandler } = require('./intents/fallbackIntentHandler');
+let { SessionResumedRequestHandler } = require('./intents/sessionResumedRequestHandler');
 let { SessionEndedRequestHandler } = require('./intents/sessionEndedRequestHandler');
 let { IntentReflectorHandler } = require('./intents/intentReflectorHandler');
 let { ErrorHandler } = require('./errors/errorHandler');
@@ -60,7 +60,6 @@ exports.handler = Alexa.SkillBuilders.custom()
         CreateTimerIntentHandler,
         ConnectionsResponsetHandler,
         YesNoIntentHandler,
-        
         AskForNameIntentHandler,
         ContactHandler,
         CaracteristicasAjoloteHandler,
@@ -75,6 +74,7 @@ exports.handler = Alexa.SkillBuilders.custom()
         CancelProductResponseHandler,
         CancelAndStopIntentHandler,
         FallbackIntentHandler,
+        SessionResumedRequestHandler,
         SessionEndedRequestHandler,
         IntentReflectorHandler)
     .addErrorHandlers(

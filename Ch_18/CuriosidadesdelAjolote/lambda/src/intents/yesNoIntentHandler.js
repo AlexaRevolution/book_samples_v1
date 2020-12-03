@@ -98,3 +98,34 @@ module.exports = {
     },
   },
 };
+
+function getAjoloteTaskLaunchTimer (handlerInput, title, duration) {
+  return {
+      duration: duration,
+      label: title,
+      creationBehavior: {
+          displayExperience: {
+              visibility: 'VISIBLE'
+          }
+      },
+      triggeringBehavior: {
+          operation: {
+              type : 'LAUNCH_TASK',
+              textToConfirm: [{
+                  locale: 'es-MX',
+                  text: 'Se acabó el temporizador. ¿Le gustaría lanzar {continueWithSkillName}?'
+              }],
+              task : {
+                  name : '[SKILL_ID].[TASK_NAME]',
+                  version : '[TASK_VERSION]',
+                  input : {
+                      //[TASK_INPUT_PARAMETERS]
+                  }
+              }
+          },
+          notificationConfig: {
+              playAudible: true
+          }
+      }
+    }
+  }
