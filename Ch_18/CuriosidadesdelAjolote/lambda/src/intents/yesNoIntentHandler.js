@@ -25,6 +25,35 @@ const timerItem = {
   }
 };
 
+const timerItemWithTask = {
+  duration: 'PT15S', //Timer de 15 Segundos
+  label: 'Ajolote',
+  creationBehavior: {
+      displayExperience: {
+          visibility: 'VISIBLE'
+      }
+  },
+  triggeringBehavior: {
+      operation: {
+          type : 'LAUNCH_TASK',
+          textToConfirm: [{
+              locale: 'es-MX',
+              text: i18n.t('TIMER_FINISH')
+          }],
+          task : {
+              name : '[SKILL_ID].[TASK_NAME]',
+              version : '[TASK_VERSION]',
+              input : {
+                  //[TASK_INPUT_PARAMETERS]
+              }
+          }
+      },
+      notificationConfig: {
+          playAudible: true
+      }
+  }
+}
+
 module.exports = {
   YesNoIntentHandler: {
     canHandle(handlerInput) {
@@ -98,34 +127,3 @@ module.exports = {
     },
   },
 };
-
-function getAjoloteTaskLaunchTimer (handlerInput, title, duration) {
-  return {
-      duration: duration,
-      label: title,
-      creationBehavior: {
-          displayExperience: {
-              visibility: 'VISIBLE'
-          }
-      },
-      triggeringBehavior: {
-          operation: {
-              type : 'LAUNCH_TASK',
-              textToConfirm: [{
-                  locale: 'es-MX',
-                  text: 'Se acabó el temporizador. ¿Le gustaría lanzar {continueWithSkillName}?'
-              }],
-              task : {
-                  name : '[SKILL_ID].[TASK_NAME]',
-                  version : '[TASK_VERSION]',
-                  input : {
-                      //[TASK_INPUT_PARAMETERS]
-                  }
-              }
-          },
-          notificationConfig: {
-              playAudible: true
-          }
-      }
-    }
-  }

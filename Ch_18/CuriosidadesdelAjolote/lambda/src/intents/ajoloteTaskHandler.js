@@ -14,7 +14,7 @@ module.exports = {
     handle(handlerInput) {
         const speechText = i18n.t('CUSTOM_TASK_SUCCESS');
 
-        /*return handlerInput.responseBuilder
+        return handlerInput.responseBuilder
             .speak(speechText)
             .addDirective({
                 "type": "Tasks.CompleteTask",
@@ -22,20 +22,7 @@ module.exports = {
                     "code": "200",
                     "message": "Ajolote significa monstruo acuático.",
                 }
-            })
-        */
-
-       return handlerInput.responseBuilder
-       .speak(speechText)
-       .addDirective({
-           'type': 'Connections.StartConnection', 
-           'uri': 'connection://[YOUR_SKILL_ID]. AjoloteType/1?provider=[YOUR_SKILL_ID]',
-           'input': {
-               'type': 'leucístico'
-           },
-           'token': '[YOUR_CORRELATION_TOKEN]'
-        })
-   
+            })        
         .withShouldEndSession(true)
         .getResponse();
     },
