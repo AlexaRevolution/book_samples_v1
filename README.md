@@ -20,6 +20,7 @@ O da click [aquí](https://www.npmjs.com/package/ask-cli) para conocer las instr
 ### Tutoriales & Guías
 * [Voice Design Guide](https://developer.amazon.com/designing-for-voice/) - Un excelente recurso para aprender a diseñar interfaces de usuario conversacionales y de voz.
 * [Codecademy: Learn Alexa](https://www.codecademy.com/learn/learn-alexa) - ¡Aprende a crear una Alexa Skill desde tu navegador con este tutorial para principiantes en Codecademy!
+* [Vox: Ninja Alexa / YouTube](https://www.youtube.com/channel/UCM9wdzw_LU7_rZvyMo0s2LA?view_as=subscriber) - ¡Conoce diferentes comandos de voz que le puedes indicar a Alexa y aprende a desarrollar Alexa Skills con los videos que en este canal te compartimos!
 
 ### Documentación
 * [Documentación Oficial del SDK de Node.js](https://www.npmjs.com/package/alexa-sdk) - La documentación oficial del SDK de Node.js
